@@ -14,15 +14,29 @@
       text-align: center;
     }
 
-    h1 {
+    header {
       margin: 20px;
+    }
+
+    h1 {
       font-size: 2.5em;
       color: #FFD700; /* Gold */
       text-shadow: 2px 2px 8px black;
     }
 
+    h2 {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     table {
-      margin: 0 auto 40px;
       border-collapse: separate;
       border-spacing: 20px;
       background: rgba(0, 0, 0, 0.7);
@@ -31,18 +45,19 @@
     }
 
     caption {
-      caption-side: top;
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-weight: bold;
-      color: #FFD700;
       margin-bottom: 15px;
+      color: #FFD700;
     }
 
     td {
-      width: 180px;
+      width: 200px;
+      height: 250px;
       background: #181818;
       border-radius: 12px;
       overflow: hidden;
+      text-align: center;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
@@ -52,10 +67,10 @@
     }
 
     .rank {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: bold;
-      color: #FFD700;
-      margin: 5px 0;
+      color: #FFD700; /* Gold */
+      margin: 8px 0;
     }
 
     img {
@@ -77,88 +92,94 @@
       text-decoration: none;
       color: inherit;
       display: block;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Top 10 ADC Champions</h1>
+  <header>
+    <h1>Top 10 ADC Champions</h1>
+    <h2>Challenger Tier – OP.GG</h2>
+  </header>
 
-  <table>
-    <caption>Challenger Tier – Source: OP.GG</caption>
-    <tr>
-      <td>
-        <a href="https://op.gg/lol/champions/yunara/build/adc?tier=challenger" target="_blank">
-          <div class="rank">1</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yunara_0.jpg" alt="Yunara splash art">
-          <div class="champion-name">Yunara</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/kaisa/build/adc?tier=challenger" target="_blank">
-          <div class="rank">2</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg" alt="Kai'Sa splash art">
-          <div class="champion-name">Kai'Sa</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/corki/build/adc?tier=challenger" target="_blank">
-          <div class="rank">3</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg" alt="Corki splash art">
-          <div class="champion-name">Corki</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/jhin/build/adc?tier=challenger" target="_blank">
-          <div class="rank">4</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg" alt="Jhin splash art">
-          <div class="champion-name">Jhin</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/lucian/build/adc?tier=challenger" target="_blank">
-          <div class="rank">5</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg" alt="Lucian splash art">
-          <div class="champion-name">Lucian</div>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://op.gg/lol/champions/sivir/build/adc?tier=challenger" target="_blank">
-          <div class="rank">6</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg" alt="Sivir splash art">
-          <div class="champion-name">Sivir</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/aphelios/build/adc?tier=challenger" target="_blank">
-          <div class="rank">7</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" alt="Aphelios splash art">
-          <div class="champion-name">Aphelios</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/ezreal/build/adc?tier=challenger" target="_blank">
-          <div class="rank">8</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg" alt="Ezreal splash art">
-          <div class="champion-name">Ezreal</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/zeri/build/adc?tier=challenger" target="_blank">
-          <div class="rank">9</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg" alt="Zeri splash art">
-          <div class="champion-name">Zeri</div>
-        </a>
-      </td>
-      <td>
-        <a href="https://op.gg/lol/champions/tristana/build/adc?tier=challenger" target="_blank">
-          <div class="rank">10</div>
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg" alt="Tristana splash art">
-          <div class="champion-name">Tristana</div>
-        </a>
-      </td>
-    </tr>
-  </table>
+  <main>
+    <table>
+      <caption>Top ADCs (Challenger Tier)</caption>
+      <tr>
+        <td>
+          <a href="https://op.gg/lol/champions/yunara/build/adc?tier=challenger" target="_blank">
+            <div class="rank">1</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yunara_0.jpg" alt="Yunara">
+            <div class="champion-name">Yunara</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/kaisa/build/adc?tier=challenger" target="_blank">
+            <div class="rank">2</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg" alt="Kai'Sa">
+            <div class="champion-name">Kai'Sa</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/corki/build/adc?tier=challenger" target="_blank">
+            <div class="rank">3</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg" alt="Corki">
+            <div class="champion-name">Corki</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/jhin/build/adc?tier=challenger" target="_blank">
+            <div class="rank">4</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg" alt="Jhin">
+            <div class="champion-name">Jhin</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/lucian/build/adc?tier=challenger" target="_blank">
+            <div class="rank">5</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg" alt="Lucian">
+            <div class="champion-name">Lucian</div>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://op.gg/lol/champions/sivir/build/adc?tier=challenger" target="_blank">
+            <div class="rank">6</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg" alt="Sivir">
+            <div class="champion-name">Sivir</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/aphelios/build/adc?tier=challenger" target="_blank">
+            <div class="rank">7</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" alt="Aphelios">
+            <div class="champion-name">Aphelios</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/ezreal/build/adc?tier=challenger" target="_blank">
+            <div class="rank">8</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg" alt="Ezreal">
+            <div class="champion-name">Ezreal</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/zeri/build/adc?tier=challenger" target="_blank">
+            <div class="rank">9</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg" alt="Zeri">
+            <div class="champion-name">Zeri</div>
+          </a>
+        </td>
+        <td>
+          <a href="https://op.gg/lol/champions/tristana/build/adc?tier=challenger" target="_blank">
+            <div class="rank">10</div>
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg" alt="Tristana">
+            <div class="champion-name">Tristana</div>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </main>
 </body>
 </html>
